@@ -1,0 +1,55 @@
+V,Lux:A,31::V,Dijon; 75km
+V,Dijon:A,6::V,Lyon; 197km
+V,Le-passage:D,1006::V,Lyon; 80km
+V,Grenoble:A,48::V,Lyon; 112km
+V,Frejus:D,6::R,Le-Monroe; 143 km
+V,Macon:A,6::V,Dijon; 128km
+V,Angers:N,7::V,Lyon; 562km
+V,Aix-les-bains:D,1075::V,Marseille; 348 km
+V,Annecy:D,1504::V,Macon; 178km
+V,Valence:D,1086::V,Lux; 103km
+V,Dijon:N,79::V,Monpellier; 550km
+V,Lyon::A,6:V,Lux; 120km
+V,Lyon:A,43:V,Le-passage;   
+V,Grenoble::A,48:Le-Passage
+V,Montelimar:D,1045::V,Nice; 350km
+V,Monpellier:::
+V,Nimes::
+V,Nice::
+V,Frejus::R,DIP-Restaurant;
+V,La Rochelle::
+V,Villeurbanne:A,6::V,Lux;
+
+A:8
+D:5
+N:2
+
+R,McDonald's-Confluence::	//Lyon
+R,DIP-Restaurant:: 			//Frejus
+R,Le-Monroe::				//Marseille
+R,Salengro-Kebab::			//Vlleurbanne
+R,La-traviata::				//Chalon
+R,La-Bicyclette-Rose::		//Annecy
+
+L,Musée-Confluence::		//Lyon 2
+L,Plage-du-Prophete::		//Marseille
+L,Brain-l'Escape-Game::		//Lux
+L,Chateau-Du-Passage::		//Le passage
+L,Abbaye-D'Hautecombre::	//Aix-les-bains 
+L,Megazone::				//Lyon 6
+
+
+Nœud:lien1::voisin1;
+lien2::voisin2;
+lien3::voisin3;.........;lienk::voisink;;
+
+
+
+30 noeuds, 3/5 villes, 1/5 rest, 1/5 loisir
+18 villes
+6 restaurant
+6 loisir
+
+1.5/5 autoroutes 9
+1.5/5 nationales 9
+1.5/5 departmentales 12
