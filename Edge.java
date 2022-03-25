@@ -1,3 +1,5 @@
+package modules;
+
 import java.util.Objects;
 
 public class Edge {
@@ -7,10 +9,12 @@ public class Edge {
     private Node node1;
     private Node node2;
 
-    public Edge(String name, char type, int length) {
+    public Edge(String name, char type, int length, Node node1, Node node2) {
         this.name = name;
         this.type = type;
         this.length = length;
+        this.node1 = node1;
+        this.node2 = node2;
     }
 
     public String getName() {
@@ -68,6 +72,9 @@ public class Edge {
 
     @Override
     public String toString() {
-        return "Edge " + this.type + this.name + ", Length : " + this.length;
+        return this.node1 + ":" + this.type + "," + this.name + ":" + this.node2 +";" + this.length + "km";
     }
 }
+
+
+//yee

@@ -1,5 +1,7 @@
-import javax.crypto.AEADBadTagException;
+package modules;
+
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Graph {
 
@@ -161,6 +163,24 @@ public class Graph {
         return c;
     }
 
+    public Node searchNode(String name){
+        for(Node node : nodes){
+            if (node.getName().equals(name)){
+                return node;
+            }
+        }
+        return null;
+    }
+
+    public Edge searchEdge(Node node1, Node node2){
+        for(Edge edge : edges){
+            if(edge.getNode1().equals(node1) && edge.getNode2().equals(node2)){
+                return edge;
+            }
+        }
+        return null;
+    }
+
     public boolean isMoreOpen(Node node1, Node node2){
         // returns true if there are more cities 2 jumps away from node1 than from node2
         return twoJumpsAwayTypeNodes(node1,'V') > twoJumpsAwayTypeNodes(node2,'V');
@@ -175,4 +195,13 @@ public class Graph {
         // returns true if there are more cultural locations 2 jumps away from node1 than from node2
         return twoJumpsAwayTypeNodes(node1, 'L') > twoJumpsAwayTypeNodes(node2,'L');
     }
+
+    public void printGraph(){
+        for(Edge edge : edges){
+            System.out.println(edge);
+        }
+    }
 }
+
+
+//yee
